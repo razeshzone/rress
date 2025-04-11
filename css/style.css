@@ -591,11 +591,11 @@ footer .rees-btn .btn-primary .arrow-first {
   text-align: center;
 }
 .boxed-item img{
-  max-height: 128px;
+  max-height: 108px;
   object-fit: contain;
 }
 .text-xl{
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
 }
 .text-sm{
