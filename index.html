@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Goggle font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- header starts -->
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-xl">
+          <a class="navbar-brand" href="#"
+            ><img src="./img/logo.svg" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">
+              <span class="icon-bar icon-bar-1"></span>
+              <span class="icon-bar icon-bar-2"></span>
+            </span>
+          </button>
+          <div class="collapse main-navbar navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="">ACCUEIL</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  L’ÉCONOMIE SOCIALE ET SOLIDAIRE
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >L’économie sociale en bref</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Pour en apprendre davantage…</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Le réseau
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Gouvernance</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Équité, diversité, inclusion</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Partenaires</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Les événements
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Calendrier des événements</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Événements passés</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Galerie photos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Activités et nouvelles</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  La recherche
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Axes de recherche</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Projets de recherche financés</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Appel à projets et bourses</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Publications</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Les membres
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Répertoire des membres</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Espace de la relève</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Devenir membre</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Contactez-nous !
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Médias</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Carrière</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Infolettre</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Nous joindre</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- banner starts -->
+    <div class="container">
+      <div class="banner">
+        <h3>
+          Le Réseau de recherche en économie sociale et solidaire (RRESS) étudie
+          les enjeux associés à la reconnaissance, au développement et à l’essor
+          de l’
+          <strong>économie sociale et solidaire.</strong>
+        </h3>
+        <div class="rees-btn">
+          <a href="" class="btn-primary link-with-arrow"
+            >En savoir plus sur le réseau
+            <span href="" class="arrow arrow-first">
+              <img src="./img/arrow.svg" alt=""
+            /></span>
+            <span href="" class="arrow arrow-second">
+              <img src="./img/arrow.svg" alt="" /></span
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- research starts-->
+    <div class="research-section">
+      <div class="container">
+        <h2>
+          Les axes <br />
+          de recherche
+        </h2>
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="research-box">
+              <div class="icon-img">
+                <img src="./img/icon-x.svg" alt="" />
+              </div>
+              <h3>Axe 1</h3>
+              <p class="matchHeight">
+                Environnement juridique, institutionnel et gouvernance de
+                l’économie sociale et solidaire
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="research-box">
+              <div class="icon-img">
+                <img src="./img/icon-ii.svg" alt="" />
+              </div>
+              <h3>Axe 2</h3>
+              <p class="matchHeight">
+                Engagement, travail et care en économie sociale et solidaire
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="research-box">
+              <div class="icon-img">
+                <img src="./img/icon-iii.svg" alt="" />
+              </div>
+              <h3>Axe 3</h3>
+              <p class="matchHeight">
+                Modèles d’organisation et d’action soutenables en économie
+                sociale et solidaire
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="research-box">
+              <div class="icon-img">
+                <img src="./img/icon-iv.svg" alt="" />
+              </div>
+              <h3>Axe 4</h3>
+              <p class="matchHeight">
+                Ancrages, développement et retombées de l’économie sociale et
+                solidaire dans les territoires
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- activites starts -->
+    <div class="activites-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <h2>
+              Activités <br />
+              et nouvelles
+            </h2>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./img/rectangle.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h4 class="card-title matchHeight">
+                  Série de Webinaires sur l’économie sociale et solidaire
+                </h4>
+                <p class="card-text">Webinaire</p>
+                <p>15 janvier 2025 à 13h</p>
+                <div class="rees-btn">
+                  <a href="#" class="link-with-arrow"
+                    ><span class="arrow-text">En savoir plus </span>
+                    <span href="" class="arrow arrow-first">
+                      <img src="./img/arrow.svg" alt=""
+                    /></span>
+                    <span href="" class="arrow arrow-second">
+                      <img src="./img/arrow.svg" alt=""
+                    /></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./img/rectangle.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h4 class="card-title matchHeight">
+                  Conférence sur les changements climatiques
+                </h4>
+                <p class="card-text">Webinaire</p>
+                <p>15 janvier 2025 à 13h</p>
+                <div class="rees-btn">
+                  <a href="#" class="link-with-arrow"
+                    ><span class="arrow-text">En savoir plus </span>
+                    <span href="" class="arrow arrow-first">
+                      <img src="./img/arrow.svg" alt=""
+                    /></span>
+                    <span href="" class="arrow arrow-second">
+                      <img src="./img/arrow.svg" alt=""
+                    /></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./img/rectangle.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h4 class="card-title matchHeight">
+                  Colloque sur la mondialisation
+                </h4>
+                <p class="card-text">Webinaire</p>
+                <p>15 janvier 2025 à 13h</p>
+                <div class="rees-btn">
+                  <a href="#" class="link-with-arrow"
+                    ><span class="arrow-text">En savoir plus </span>
+                    <span href="" class="arrow arrow-first">
+                      <img src="./img/arrow.svg" alt=""
+                    /></span>
+                    <span href="" class="arrow arrow-second">
+                      <img src="./img/arrow.svg" alt=""
+                    /></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="493"
+        height="493"
+        viewBox="0 0 493 493"
+      >
+        <circle
+          id="Ellipse_3"
+          data-name="Ellipse 3"
+          cx="246.5"
+          cy="246.5"
+          r="246.5"
+          fill="#eb6752"
+        />
+      </svg>
+    </div>
+    <!-- project-section -->
+    <div class="project-section">
+      <img src="./img/text.png" alt="" class="text" />
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <h2>
+              Appels <br />
+              à projets <br />
+              et bourses
+            </h2>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./img/rectangle.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h4 class="card-title matchHeight">
+                  Série de Webinaires sur l’économie sociale et solidaire
+                </h4>
+                <p class="card-text">Webinaire</p>
+                <p>15 janvier 2025 à 13h</p>
+                <div class="rees-btn">
+                  <a href="#" class="link-with-arrow"
+                    ><span class="arrow-text">En savoir plus </span>
+                    <span href="" class="arrow arrow-first">
+                      <img src="./img/arrow.svg" alt=""
+                    /></span>
+                    <span href="" class="arrow arrow-second">
+                      <img src="./img/arrow.svg" alt=""
+                    /></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./img/rectangle.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h4 class="card-title matchHeight">
+                  Conférence sur les changements climatiques
+                </h4>
+                <p class="card-text">Webinaire</p>
+                <p>15 janvier 2025 à 13h</p>
+                <div class="rees-btn">
+                  <a href="#" class="link-with-arrow"
+                    ><span class="arrow-text">En savoir plus </span>
+                    <span href="" class="arrow arrow-first">
+                      <img src="./img/arrow.svg" alt=""
+                    /></span>
+                    <span href="" class="arrow arrow-second">
+                      <img src="./img/arrow.svg" alt=""
+                    /></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./img/rectangle.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h4 class="card-title matchHeight">
+                  Colloque sur la mondialisation
+                </h4>
+                <p class="card-text">Webinaire</p>
+                <p>15 janvier 2025 à 13h</p>
+                <div class="rees-btn">
+                  <a href="#" class="link-with-arrow"
+                    ><span class="arrow-text">En savoir plus </span>
+                    <span href="" class="arrow arrow-first">
+                      <img src="./img/arrow.svg" alt=""
+                    /></span>
+                    <span href="" class="arrow arrow-second">
+                      <img src="./img/arrow.svg" alt=""
+                    /></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- partner  -->
+
+    <div class="partner">
+      <div class="container">
+        <h2>
+          Nos <br />
+          partenaires
+        </h2>
+        <div class="partner-logo">
+          <a href=""><img src="./img/UdeS.svg" alt="" /></a>
+          <a href=""><img src="./img/UQAM.svg" alt="" /></a>
+          <a href=""><img src="./img/uqo.svg" alt="" /></a>
+          <a href=""><img src="./img/UL.svg" alt="" /></a>
+        </div>
+        <div class="down-partner">
+          <p>Propulsé par le Secteur Société et culture du</p>
+          <a href=""><img src="./img/quebic.svg" alt="" /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer starts -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Navigation</h4>
+            <ul>
+              <li>
+                <a href="">L’ÉCONOMIE SOCIALE ET SOLIDAIRE</a>
+              </li>
+              <li><a href="">LE RÉSEAU</a></li>
+              <li><a href="">LES ÉVÉNEMENTS</a></li>
+              <li><a href="">LA RECHERCHE</a></li>
+              <li><a href="">LES MEMBRES</a></li>
+              <li><a href="">CONTACTEZ-NOUS !</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Qui sommes-nous</h4>
+            <p>
+              Le Réseau de recherche en économie sociale et solidaire (RRESS)
+              étudie les enjeux associés à la reconnaissance, au développement
+              et à l’essor de l’économie sociale et solidaire.
+            </p>
+
+            <div class="social-links">
+              <h4>Nous joindre</h4>
+              <div class="d-flex align-items-center">
+                <a href="">info@RRESS.ca</a>
+                <a href="" class="links">
+                  <i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h4>Infolettre</h4>
+            <p>Pour recevoir notre infolettre, inscrivez-vous!</p>
+            <div class="rees-btn">
+              <a href="" class="btn-primary link-with-arrow"
+                >Je m’abonne
+                <span href="" class="arrow arrow-first">
+                  <img src="./img/arrow.svg" alt=""
+                /></span>
+                <span href="" class="arrow arrow-second">
+                  <img src="./img/arrow.svg" alt="" /></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="lower-footer">
+      <div class="container">
+        <p>
+          © Réseau de recherche en économie sociale et solidaire – Tous droits
+          réservés – 2024
+        </p>
+      </div>
+    </div>
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"
+      integrity="sha512-/bOVV1DV1AQXcypckRwsR9ThoCj7FqTV2/0Bm79bL3YSyLkVideFLE3MIZkq1u5t28ke1c0n31WYCOrO01dsUg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
