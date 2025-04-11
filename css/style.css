@@ -18,7 +18,8 @@ body {
 }
 
 .container {
-  max-width: 1540px;
+  /* max-width: 1540px; */
+  max-width: 1280px;
   margin: auto;
   padding: 0 20px;
 }
@@ -158,7 +159,7 @@ header .dropdown-menu li:last-child {
   font-weight: 500;
   border: 1px solid var(--primaryColor);
   transition: var(--transition500);
-  max-width: 412px;
+  max-width: 432px;
   /* padding-left: 25px; */
 }
 
@@ -513,12 +514,13 @@ footer .rees-btn .btn-primary .arrow-first {
 /* new css starts */
 .content-title {
   position: relative;
+  margin-bottom: 20px;
 }
 .text-overlay{
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 88%;
+  top: 83%;
   left: 4%;
   transform: translateY(-50%);
 }
@@ -576,6 +578,9 @@ footer .rees-btn .btn-primary .arrow-first {
   text-decoration: none;
   transition: var(--transition500);
 }
+.watermark{
+  z-index: -1;
+}
 .watermark img{
   object-fit: contain;
   max-width: 900px;
@@ -612,13 +617,19 @@ footer .rees-btn .btn-primary .arrow-first {
   text-decoration: none !important;
 }
 .pull-me{
-  left: -160px !important;
+  left: -120px !important;
 }
 .pull-me svg{
   transform: scale(0.8);
 }
+.equality-page-pull{
+  bottom: 33% !important;
+}
 .ext-links li{
   border-bottom: solid 1px var(--lightGreen);
+}
+.ext-links.no-border li{
+  border-bottom: none;
 }
 .ext-links li:last-child{
   border-bottom: none;
@@ -639,6 +650,144 @@ footer .rees-btn .btn-primary .arrow-first {
   width: 100%;
   max-width: 180px;
 }
+.main-content{
+  padding-bottom: 70px;
+}
 .main-content .link-primary{
   color: var(--lightGreen) !important;
+}
+.cta-yellow-box{
+  overflow: hidden;
+  width: 100%;
+  background: var(--primaryColor);
+  border-radius: 90px 90px 0px 90px;
+  padding: 80px;
+}
+.cta-yellow-box .position-me{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  object-fit: cover;
+  z-index: 0;
+  height: 100%;
+}
+.cta-yellow-box .rees-btn .btn-primary{
+  background: var(--blue);
+  transition: var(--transition500);
+}
+.cta-yellow-box .rees-btn .arrow{
+  background: var(--white);
+  transition: var(--transition500);
+}
+.cta-yellow-box .rees-btn .btn-primary svg path{
+  fill: var(--blue);
+  transition: var(--transition500);
+}
+.cta-yellow-box .rees-btn .btn-primary:hover{
+  background: transparent;
+  color: var(--blue);
+  border-color: var(--blue);
+  transition: var(--transition500);
+}
+.cta-yellow-box .rees-btn .btn-primary:hover .arrow{
+  background: var(--blue);
+  transition: var(--transition500);
+}
+.cta-yellow-box .rees-btn .btn-primary:hover svg path{
+  fill: var(--white);
+  transition: var(--transition500);
+}
+
+.constraint-text{
+  max-width: 640px;
+  font-weight: 600;
+}
+.resource-description a{
+  color: var(--blue);
+  font-weight: 400;
+  text-decoration: underline;
+}
+.resource-description a i{
+  font-weight: 600;
+  font-size: 18px;
+}
+.card-orange-title a{
+  color: var(--Orange);
+}
+.social-network{
+  background: var(--lightGreen);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.social-network:hover{
+  background: var(--blue);
+  color: var(--white);
+  transition: var(--transition500);
+}
+.team-box{
+  border-radius: 27px 27px 0 27px;
+  background: var(--white);
+  overflow: hidden;
+}
+.team-box img{
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: var(--transition500);
+}
+.team-box:hover img{
+  transform: scale(1.1);
+  transition: var(--transition500);
+}
+.team-box .team-box-top{
+  overflow: hidden;
+}
+.team-box .team-box-btm {
+  padding: 6%;
+  font-size: 16px;
+  color: var(--Offblack);
+}
+.team-box-btm h4{
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--lightGreen);
+}
+.team-bottom-box{
+  background:none;
+}
+.team-bottom-box p a{
+  color: var(--primaryColor);
+  font-weight: 400;
+}
+.team-bottom-box .rees-btn .link-with-arrow{
+  max-width: 270px;
+  background: var(--primaryColor);
+  color: var(--blue);
+}
+.team-bottom-box .rees-btn .link-with-arrow .arrow{
+  background: var(--blue);
+}
+.team-bottom-box .rees-btn .link-with-arrow .arrow svg path{
+  fill: var(--white);
+}
+.team-bottom-box .rees-btn .link-with-arrow:hover{
+  background: transparent;
+  color: var(--white);
+}
+.team-bottom-box .rees-btn .link-with-arrow:hover .arrow{
+  background: var(--primaryColor);
+}
+.team-bottom-box .rees-btn .link-with-arrow:hover svg path{
+  fill: var(--blue);
+}
+.watermark.pull-up{
+  bottom: 16% !important;
 }

@@ -43,7 +43,7 @@
     left: -230px !important;
   }
   .pull-me svg {
-    transform: scale(0.5);
+    transform: scale(0.7);
   }
 }
 
@@ -59,7 +59,7 @@
     top: 80%;
   }
   .content-title h1{
-    font-size: 30px;
+    font-size: 40px;
   }
   .pull-me{
     display: none;
@@ -68,7 +68,9 @@
     margin: 0;
     padding: 20px;
   }
-  
+  .cta-yellow-box{
+    padding: 45px;
+  }
 }
 
 @media (max-width: 776px) {
@@ -116,9 +118,16 @@
     top: 84%;
   }
   .content-title h1{
-    font-size: 20px;
+    font-size: 35px;
   }
   .content-title img{
     height: 200px;
+  }
+  .right-content h2{
+    font-size: 25px;
+  }
+  .position-me{
+    height: max-content;
+    height: 100%;
   }
 }
