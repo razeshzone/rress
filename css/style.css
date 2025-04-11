@@ -639,3 +639,6 @@ footer .rees-btn .btn-primary .arrow-first {
   width: 100%;
   max-width: 180px;
 }
+.main-content .link-primary{
+  color: var(--lightGreen) !important;
+}
