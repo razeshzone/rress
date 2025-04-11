@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RRESS</title>
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Goggle font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- header starts -->
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-xl">
+          <a class="navbar-brand" href="#"
+            ><img src="./img/logo.svg" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">
+              <span class="icon-bar icon-bar-1"></span>
+              <span class="icon-bar icon-bar-2"></span>
+            </span>
+          </button>
+          <div class="collapse main-navbar navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="">ACCUEIL</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  L’ÉCONOMIE SOCIALE ET SOLIDAIRE
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="social-economy-in-brief.html"
+                      >L’économie sociale en bref</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Pour en apprendre davantage…</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Le réseau
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Gouvernance</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Équité, diversité, inclusion</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Partenaires</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Les événements
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Calendrier des événements</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Événements passés</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Galerie photos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Activités et nouvelles</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  La recherche
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Axes de recherche</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Projets de recherche financés</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Appel à projets et bourses</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Publications</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Les membres
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Répertoire des membres</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Espace de la relève</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Devenir membre</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Contactez-nous !
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Médias</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Carrière</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Infolettre</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Nous joindre</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- header ends -->
+    <!-- main content starts -->
+    <main class="main-content position-relative">
+      <div class="container">
+        <div class="content-title">
+          <div class="text-overlay">
+            <h1>Le réseau</h1>
+          </div>
+          <img class="img-fluid" src="img/entete_secondaire_reseau.png" alt="">
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-5 col-lg-4">
+            <div class="left-sidebar">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">À propos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="team.html">Équipe</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="governance.html">Gouvernance</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="equity-diversity-inclusion.html">Équité, diversité, inclusion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="partners.html">Partenaires</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7 col-lg-8">
+            <div class="right-content">
+              <div class="mb-5">
+                <h2>Partenaires</h2>
+                <p>L’équipe du RRESS collabore avec des acteurs clés de l’écosystème de l’économie sociale et solidaire (ÉSS), incluant des chercheur·euse·s issu.e.s d’établissements universitaires et collégiaux québécois ainsi que des milieux de pratique. Le RRESS est privilégié de pouvoir compter sur l’appui de nombreux·ses collaborateur·trice·s et des principales organisations faitières en ÉSS au Québec. La démarche s’inscrit dans un processus de co-construction des connaissances, favorisant l’échange entre les milieux de recherche et de pratique.</p>
+              </div>              
+              <div class="mb-5">
+                <div class="partner-logo partner-logo-scale">
+                  <ul class="breadcrumb p-0 d-flex justify-content-center w-100 align-items-center">
+                    <li><a href=""><img src="./img/UL.svg" alt=""></a></li>
+                    <li><a href=""><img src="./img/UQAM.svg" alt=""></a></li>
+                    <li><a href=""><img src="./img/uqo.svg" alt=""></a></li>
+                    <li><a href=""><img src="./img/UdeS.svg" alt=""></a></li>
+                    <li><a href=""><img src="./img/logo_chantier_CMYK.svg" alt=""></a></li>
+                    <li><a href=""><img src="./img/Logo CQCM.svg" alt=""></a></li>
+                    <li><a href=""><img src="./img/CSMO_ESAC_logo_organisation_ESMO.svg" alt=""></a></li>
+                    <li><a href=""><img src="./img/TIESS_logo_coul.svg" alt=""></a></li>
+                  </ul>
+                </div>
+                <div class="down-partner">
+                  <p>Propulsé par le Secteur Société et culture du</p>
+                  <a href=""><img src="./img/quebic.svg" alt=""></a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="watermark position-absolute start-0 bottom-0 pull-me">
+        <svg width="606.000000" height="606.000000" viewBox="0 0 606 606" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs/>
+          <g style="mix-blend-mode:normal">
+            <circle id="Ellipse 17" cx="303.000000" cy="303.000000" r="303.000000" fill="#FAB526" fill-opacity="1.000000"/>
+            <circle id="Ellipse 17" cx="303.000000" cy="303.000000" r="302.500000" stroke="#707070" stroke-opacity="0" stroke-width="1.000000"/>
+          </g>
+        </svg>     
+      </div>
+    </main>  
+    <!-- footer starts -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Navigation</h4>
+            <ul>
+              <li>
+                <a href="">L’ÉCONOMIE SOCIALE ET SOLIDAIRE</a>
+              </li>
+              <li><a href="">LE RÉSEAU</a></li>
+              <li><a href="">LES ÉVÉNEMENTS</a></li>
+              <li><a href="">LA RECHERCHE</a></li>
+              <li><a href="">LES MEMBRES</a></li>
+              <li><a href="">CONTACTEZ-NOUS !</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Qui sommes-nous</h4>
+            <p>
+              Le Réseau de recherche en économie sociale et solidaire (RRESS)
+              étudie les enjeux associés à la reconnaissance, au développement
+              et à l’essor de l’économie sociale et solidaire.
+            </p>
+
+            <div class="social-links">
+              <h4>Nous joindre</h4>
+              <div class="d-flex align-items-center">
+                <a href="">info@RRESS.ca</a>
+                <a href="" class="links">
+                  <i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h4>Infolettre</h4>
+            <p>Pour recevoir notre infolettre, inscrivez-vous!</p>
+            <div class="rees-btn">
+              <a href="" class="btn-primary link-with-arrow"
+                >Je m’abonne
+                <span href="" class="arrow arrow-first">
+                  <img src="./img/arrow.svg" alt=""
+                /></span>
+                <span href="" class="arrow arrow-second">
+                  <img src="./img/arrow.svg" alt="" /></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="lower-footer">
+      <div class="container">
+        <p>
+          © Réseau de recherche en économie sociale et solidaire – Tous droits
+          réservés – 2024
+        </p>
+      </div>
+    </div>
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"
+      integrity="sha512-/bOVV1DV1AQXcypckRwsR9ThoCj7FqTV2/0Bm79bL3YSyLkVideFLE3MIZkq1u5t28ke1c0n31WYCOrO01dsUg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

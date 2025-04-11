@@ -32,6 +32,19 @@
   .project-section {
     padding: 100px 0 100px;
   }
+  .text-overlay{
+    top: 82%;
+  }
+  .watermark img{
+    object-fit: contain;
+    max-width: 500px;
+  }
+  .pull-me{
+    left: -230px !important;
+  }
+  .pull-me svg {
+    transform: scale(0.5);
+  }
 }
 
 @media (max-width: 992px) {
@@ -42,6 +55,20 @@
   footer .rees-btn .btn-primary .arrow-first {
     margin-left: 17px;
   }
+  .text-overlay{
+    top: 80%;
+  }
+  .content-title h1{
+    font-size: 30px;
+  }
+  .pull-me{
+    display: none;
+  }
+  .partner-logo-scale li{
+    margin: 0;
+    padding: 20px;
+  }
+  
 }
 
 @media (max-width: 776px) {
@@ -84,5 +111,14 @@
 
   .banner .rees-btn .btn-primary .arrow-first {
     margin-left: 17px;
+  }
+  .text-overlay{
+    top: 84%;
+  }
+  .content-title h1{
+    font-size: 20px;
+  }
+  .content-title img{
+    height: 200px;
   }
 }
