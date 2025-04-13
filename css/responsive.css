@@ -1,13 +1,15 @@
+@import url(style.css);
+
 @media (max-width: 1500px) {
 }
 
 @media (max-width: 1200px) {
   h2 {
-    font-size: 40px;
+    font-size: var(--font-size-4xl);
   }
 
   h3 {
-    font-size: 30px;
+    font-size: var(--font-size-3xl);
   }
 
   h4 {
@@ -15,7 +17,7 @@
   }
   .activites-section p,
   .project-section p {
-    font-size: 18px;
+    font-size: var(--font-size-lg);
   }
   .banner {
     height: 650px;
@@ -23,7 +25,7 @@
   }
 
   .research-box p {
-    font-size: 20px;
+    font-size: var(--font-size-xl);
   }
 
   .card {
@@ -31,9 +33,6 @@
   }
   .project-section {
     padding: 100px 0 100px;
-  }
-  .text-overlay{
-    top: 82%;
   }
   .watermark img{
     object-fit: contain;
@@ -45,6 +44,34 @@
   .pull-me svg {
     transform: scale(0.7);
   }
+  .content-title h1{
+    font-size: var(--font-size-4xl);
+  }
+  .left-sidebar .nav-link,
+  .right-content p{
+    font-size: var(--font-size-base);
+  }
+  .right-content h2{
+    font-size: var(--font-size-3xl);
+  }
+  .mb-78{
+    margin-bottom: 60px;
+  }
+  .mb-36{
+    margin-bottom: 30px;
+  }
+  .pull-me svg{
+    transform: scale(0.8);
+  }
+  .team-bottom-box h2{
+    font-size: var(--font-size-5xl);
+  }
+  .team-bottom-box p{
+    font-size: var(--font-size-xl);
+  }
+  .cta-yellow-box{
+    padding: 50px 70px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -55,11 +82,8 @@
   footer .rees-btn .btn-primary .arrow-first {
     margin-left: 17px;
   }
-  .text-overlay{
-    top: 80%;
-  }
   .content-title h1{
-    font-size: 40px;
+    font-size: var(--font-size-4xl);
   }
   .pull-me{
     display: none;
@@ -70,6 +94,21 @@
   }
   .cta-yellow-box{
     padding: 45px;
+  }
+  .boxed-item{
+    padding:50px 30px;
+  }
+  .mb-78{
+    margin-bottom: 50px;
+  }
+  .mb-36{
+    margin-bottom: 25px;
+  }
+  .team-members{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .team-box-btm h4, .team-box-btm h5 {
+    font-size: var(--font-size-xl);
   }
 }
 
@@ -92,7 +131,22 @@
   }
 
   .research-box p {
-    font-size: 18px;
+    font-size: var(--font-size-lg);
+  }
+  .content-title h1{
+    font-size: var(--font-size-3xl);
+  }
+  .right-content h2 {
+    font-size: var(--font-size-2xl);
+  }
+  .mb-78{
+    margin-bottom: 40px;
+  }
+  .mb-36{
+    margin-bottom: 20px;
+  }
+  .left-sidebar{
+    padding-left: 0;
   }
 }
 
@@ -114,20 +168,27 @@
   .banner .rees-btn .btn-primary .arrow-first {
     margin-left: 17px;
   }
-  .text-overlay{
-    top: 84%;
+  .main-content {
+    padding-bottom:20px;
   }
   .content-title h1{
-    font-size: 35px;
+    font-size: var(--font-size-2xl);
   }
   .content-title img{
     height: 200px;
   }
   .right-content h2{
-    font-size: 25px;
+    font-size: var(--font-size-xl);
   }
   .position-me{
     height: max-content;
     height: 100%;
   }
+  .mb-78{
+    margin-bottom: 30px;
+  }
+  .mb-36{
+    margin-bottom: 15px;
+  }
+
 }
