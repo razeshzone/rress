@@ -1004,3 +1004,12 @@ footer .rees-btn .btn-primary .arrow-first {
 .sidebar-dropdown-nav .dropdown-menu a{
   font-weight: var(--font-weight-300);
 }
+.image-wrap{
+  border-radius: 27px 27px 0 27px;
+  overflow: hidden;
+}
+.image-wrap img{
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+}
