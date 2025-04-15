@@ -38,6 +38,9 @@ body {
   --spacer-36px: 36px;
   --spacer-30px: 30px;
   --spacer-20px: 20px;
+  --radius-90px: clamp(30px, 3.2px + 4vw, 90px);
+  --radius-32px: clamp(16px, 3.2px + 4vw, 32px);
+  --radius-27px: clamp(16px, 3.2px + 4vw, 27px);
 }
 .text-orange{
   color: var(--Orange) !important;
@@ -197,7 +200,7 @@ header .dropdown-menu li:last-child {
 }
 
 /* Optional: Add transition effects */
-.dropdown-menu {
+header .dropdown-menu {
   display: none;
   opacity: 0;
   visibility: hidden;
@@ -221,7 +224,7 @@ header .dropdown-menu li:last-child {
   max-width: 710px;
 }
 
-.rees-btn .btn-primary {
+/* .rees-btn .btn-primary {
   background: var(--primaryColor);
   padding: 12px 15px;
   border-radius: 15px;
@@ -232,7 +235,6 @@ header .dropdown-menu li:last-child {
   border: 1px solid var(--primaryColor);
   transition: var(--transition500);
   max-width: 432px;
-  /* padding-left: 25px; */
 }
 
 .rees-btn .btn-primary .arrow-first {
@@ -242,7 +244,7 @@ header .dropdown-menu li:last-child {
 .btn-primary:hover {
   background: inherit;
   color: var(--white);
-}
+} */
 
 .banner .rees-btn {
   margin-top: 70px;
@@ -756,7 +758,7 @@ footer .rees-btn .btn-primary .arrow-first {
   overflow: hidden;
   width: 100%;
   background: var(--primaryColor);
-  border-radius: 90px 90px 0px 90px;
+  border-radius: var(--radius-90px) var(--radius-90px) 0 var(--radius-90px);
   padding: 80px;
 }
 .cta-yellow-box .position-me{
@@ -984,8 +986,15 @@ footer .rees-btn .btn-primary .arrow-first {
   border-radius: 0;
   border: none;
   background-color: transparent;
-  padding: 0 20px;
+  padding: 0 0 0 20px;
   font-weight: var(--font-weight-300);
+  width: 100%;
+  display: none;
+}
+.sidebar-dropdown-nav .dropdown-menu.show{
+  display: block;
+  position: relative !important;
+  transform: none !important;
 }
 .sidebar-dropdown-nav .dropdown-menu li{
   padding: 0;
@@ -996,20 +1005,145 @@ footer .rees-btn .btn-primary .arrow-first {
   font-family: "Font Awesome 6 Free";
   font-weight: 700;
   font-size: var(--font-size-base);
+  position: absolute;
+  right: 0;
 }
-.sidebar-dropdown-nav .dropdown.show > .dropdown-toggle::after,
-.sidebar-dropdown-nav .nav-item.dropdown:hover > .dropdown-toggle::after {
+.sidebar-dropdown-nav .nav-item.dropdown:hover > .dropdown-toggle::after,
+.sidebar-dropdown-nav .dropdown-toggle.show::after{
   transform: rotate(90deg);
 }
 .sidebar-dropdown-nav .dropdown-menu a{
   font-weight: var(--font-weight-300);
 }
+.sidebar-dropdown-nav .dropdown-item.active, .sidebar-dropdown-nav .dropdown-item:active {
+  background-color: var(--lightGreen);
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .image-wrap{
-  border-radius: 27px 27px 0 27px;
+  border-radius: var(--radius-27px) var(--radius-27px) 0 var(--radius-27px);
   overflow: hidden;
 }
 .image-wrap img{
   max-width: 100%;
   width: 100%;
   object-fit: cover;
+}
+.custom-border-radius{
+  border-radius: var(--radius-32px) var(--radius-32px) 0 var(--radius-32px);
+  padding: clamp(16px, 3.2px + 4vw, 32px);
+}
+.right-content .text-secondary-color p span{
+  color: var(--secondaryColor);
+}
+.right-content .text-secondary-color p strong{
+  font-weight: 700;
+}
+.rees-btn .btn-primary.text-btn-link{
+  padding: 0;
+}
+.rees-btn .btn-primary.text-btn-link{
+  color: var(--blue);
+  background-color: transparent;
+  border-color: transparent;
+}
+.text-btn-link.btn-primary:hover {
+  background: transparent;
+  color: var(--lightGreen);
+}
+.rees-btn .btn-primary.text-btn-link:hover .arrow-first{
+  opacity: 0;
+}
+.rees-btn .btn-primary.text-btn-link:hover .arrow-second{
+  opacity: 1;
+  background: var(--lightGreen);
+}
+/*cta-btn*/
+.arrow-btn {
+  padding: 10px 26px 10px 20px; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primaryColor);
+  color: var(--blue);
+  border: none;
+  border-radius:clamp(10px, 3.2px + 4vw, 19px);
+  cursor: pointer;
+  position: relative;
+  /* overflow: hidden; */
+  border: solid 1px var(--primaryColor);
+}
+.arrow-btn:hover,
+.arrow-btn:focus{
+  background-color: transparent;
+  border-color: var(--primaryColor);
+  color: var(--white);
+}
+.arrow-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-left: 8px;
+  border-radius: 50%;
+  background-color:var(--blue);
+  color: var(--white);
+  font-size: 12px;
+  transition: transform 0.1s ease, background-color 0.1s ease 0.1s; 
+  position: relative;
+}
+.arrow-btn:hover .arrow-icon {
+  transform: translateX(12px); 
+  background-color: var(--primaryColor); 
+  color: var(--Offblack);
+}
+.arrow-btn-light{
+  background-color: transparent;
+  color: var(--Offblack);
+  border-color: transparent;
+}
+.arrow-btn-light:hover,
+.arrow-btn-light:focus{
+  border-color: transparent;
+  color: var(--Offblack);
+}
+.arrow-btn-light:hover .arrow-icon {
+  transform: translateX(12px); 
+  background-color: var(--lightGreen); 
+}
+
+.arrow-btn-dark{
+  background-color: var(--Offblack);
+  color: var(--white);
+  border-color: transparent;
+}
+.arrow-btn-dark .arrow-icon{
+  background-color: var(--white);
+  color: var(--Offblack);
+}
+.arrow-btn-dark:hover,
+.arrow-btn-dark:focus{
+  border-color: var(--Offblack);
+  color: var(--Offblack);
+}
+.arrow-btn-dark:hover .arrow-icon {
+  transform: translateX(12px); 
+  background-color: var(--Offblack);
+  color: var(--white); 
+}
+.card-body .arrow-btn:hover{
+  color: var(--lightGreen);
+}
+.card-body .arrow-btn:hover .arrow-icon{
+  background: var(--lightGreen);
+  color: var(--white);
+}
+.cta-red-box .arrow-btn:hover{
+  color: var(--white);
+}
+.cta-red-box .arrow-btn:hover .arrow-icon{
+  background: var(--primaryColor);
+  color: var(--Offblack);
 }

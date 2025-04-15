@@ -129,7 +129,7 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-item" href="events-calendar.html"
+                    <a class="dropdown-item" href="events-calendar-list.html"
                       >Calendrier des événements</a
                     >
                   </li>
@@ -222,27 +222,86 @@
       <div class="container">
         <div class="content-title">
           <div class="text-overlay">
-            <h1>Événements passés</h1>
+            <h1>Les événements</h1>
           </div>
           <img class="img-fluid" src="img/entete_secondaire_evenements.png" srcset="img/entete_secondaire_evenements@2x.png 2x, img/entete_secondaire_evenements.png 1x" alt="">
         </div>
         <div class="row">
           <div class="col-sm-12 col-md-5 col-lg-4">
             <div class="left-sidebar">
-              <ul class="nav flex-column">
+              <ul class="nav flex-column mb-78 pe-5">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="events-calendar.html">Calendrier des événements</a>
+                  <a class="nav-link active" aria-current="page" href="events-calendar-list.html">Calendrier des événements</a>
                 </li>
               </ul>
+              <ul class="nav navbar-nav sidebar-dropdown-nav flex-column pe-5">
+                <li><span class="fw-600 fs-xl ps-3">Filtrer les résultats</span></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="fw-300">Axe</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Axe 1</a></li>
+                    <li><a class="dropdown-item" href="#">Axe 2</a></li>
+                    <li><a class="dropdown-item" href="#">Axe 3</a></li>
+                    <li><a class="dropdown-item" href="#">Axe 4</a></li>
+                    <li><a class="dropdown-item" href="#">Axe 5</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="fw-300">Mois</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Janvier</a></li>
+                    <li><a class="dropdown-item" href="#">Février</a></li>
+                    <li><a class="dropdown-item" href="#">Mars</a></li>
+                    <li><a class="dropdown-item" href="#">Avril</a></li>
+                    <li><a class="dropdown-item" href="#">Mai</a></li>
+                    <li><a class="dropdown-item" href="#">Juin</a></li>
+                    <li><a class="dropdown-item" href="#">Juillet</a></li>
+                    <li><a class="dropdown-item" href="#">Août</a></li>
+                    <li><a class="dropdown-item" href="#">Septembre</a></li>
+                    <li><a class="dropdown-item" href="#">Octobre</a></li>
+                    <li><a class="dropdown-item" href="#">Novembre</a></li>
+                    <li><a class="dropdown-item" href="#">Axe 1</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="fw-300">Année</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">2024</a></li>
+                    <li><a class="dropdown-item" href="#">2025</a></li>
+                    <li><a class="dropdown-item" href="#">2026</a></li>
+                    <li><a class="dropdown-item" href="#">2027</a></li>
+                    <li><a class="dropdown-item" href="#">2028</a></li>
+                  </ul>
+                </li>
+              </ul>
+
             </div>
           </div>
           <div class="col-sm-12 col-md-7 col-lg-8">
             <div class="right-content">
               <div class="mb-36">
                 <h2>Événements passés</h2>
-                <div class=" rounded-3 bg-white p-4">
-                  <div class="mb-3">
+                <div class="bg-white custom-border-radius">
+                  <div class="mb-4">
                     <h4 class="text-brand fw-600">L’ES et le milieu académique</h4>
+                  </div>
+                  <div class="mb-3 text-secondary-color">
+                    <p><strong>Date:</strong> <span>25 novembre 2024</span></p>
+                  </div>
+                  <div class="mb-3 text-secondary-color">
+                    <p><strong>Horaire:</strong> <span>de 17h à 21h</span></p>
+                  </div>
+                  <div class="mb-3 text-secondary-color">
+                    <p><strong>Lieu:</strong> <span>À l’Université du Québec en Outaouais</span></p>
+                  </div>
+                  <div class="mb-3 text-secondary-color">
+                    <p><strong>Axe:</strong> <span>4</span></p>
                   </div>
                   <div class="mb-36">
                     <p>Lundi 25 novembre avait lieu à Université du Québec en Outaouais, L’ES et le milieu académique. Coorganisé par Economie sociale Laurentides et RRESS – Réseau de recherche en économie sociale et solidaire, l’événement avait pour but de démystifier et de faire connaître davantage le mouvement de l’économie sociale aux professeur.es et étudiant.es des Laurentides et de l’Outaouais.</p> 
@@ -313,16 +372,12 @@
           <div class="col-md-4">
             <h4>Infolettre</h4>
             <p>Pour recevoir notre infolettre, inscrivez-vous!</p>
-            <div class="rees-btn">
-              <a href="" class="btn-primary link-with-arrow"
-                >Je m’abonne
-                <span href="" class="arrow arrow-first">
-                  <img src="./img/arrow.svg" alt=""
-                /></span>
-                <span href="" class="arrow arrow-second">
-                  <img src="./img/arrow.svg" alt="" /></span
-              ></a>
-            </div>
+            <a href="#" class="btn btn-primary arrow-btn text-uppercase fw-500">
+                      Je m’abonne
+                      <span class="arrow-icon">
+                        <i class="fa-solid fa-right-long"></i>
+                      </span>
+                    </a>
           </div>
         </div>
       </div>

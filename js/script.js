@@ -1,6 +1,5 @@
 
 $(function () {
   // Init matchHeight
-  $('.matchHeight').matchHeight();
-
+  $('.matchHeight').matchHeight();  
 });
