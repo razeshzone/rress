@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RRESS</title>
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Goggle font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- header starts -->
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-xl">
+          <a class="navbar-brand" href="#"
+            ><img src="./img/logo.svg" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">
+              <span class="icon-bar icon-bar-1"></span>
+              <span class="icon-bar icon-bar-2"></span>
+            </span>
+          </button>
+          <div class="collapse main-navbar navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="">ACCUEIL</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  L’ÉCONOMIE SOCIALE ET SOLIDAIRE
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="social-economy-in-brief.html"
+                      >L’économie sociale en bref</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Pour en apprendre davantage…</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Le réseau
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Gouvernance</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Équité, diversité, inclusion</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Partenaires</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Les événements
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="events-calendar-list.html"
+                      >Calendrier des événements</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  La recherche
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Axes de recherche</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Projets de recherche financés</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Appel à projets et bourses</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Publications</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Les membres
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Répertoire des membres</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Espace de la relève</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Devenir membre</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Contactez-nous !
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="medias.html">Médias</a>
+                  </li>                  
+                  <li>
+                    <a class="dropdown-item" href="newsletter.html">Infolettre</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="contactus.html">Nous joindre</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- header ends -->
+    <!-- main content starts -->
+    <main class="main-content position-relative">
+      <div class="container">
+        <div class="content-title">
+          <div class="text-overlay">
+            <h1>La recherche</h1>
+          </div>
+          <img class="img-fluid" src="img/entete_secondaire_recherche.png" srcset="img/entete_secondaire_recherche@2x.png 2x, img/entete_secondaire_recherche.png 1x" alt="">
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-5 col-lg-4">
+            <div class="left-sidebar">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Axes de recherche</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Projets de recherche financés</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Appel à projets et bourses</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Publications des membres</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7 col-lg-8">
+            <div class="right-content">
+              <div class="mb-0">
+                <h2>Axes de recherche</h2>                
+              </div>
+              <div class="research-axes-wrap">
+                <div class="research-block">
+                  <div class="row">
+                    <div class="col-12 col-lg-12">
+                      <div class="row">
+                        <div class="col-12 col-lg-9">
+                          <div class="d-flex flex-column flex-md-row justify-content-start align-items-start mb-3">
+                            <div class="d-block">
+                              <div class="research-img">
+                                <img class="img-fluid" src="./img/icon-x.svg" alt="">
+                              </div>
+                            </div>
+                            <div class="d-block">
+                              <h3 class="fw-700 text-blue">Axe 1 : Environnement juridique, institutionnel 
+                                et gouvernance</h3>  
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-lg-9">
+                          <div class="mb-3">
+                              <h5>Cotitulaire responsable de l’axe: <br>
+                                Claude-André Guillotte, Université Sherbrooke</h5>
+                              <p>L’axe 1 vise à contribuer au développement des connaissances sur les structures, processus et dynamiques qui façonnent l’environnement juridique et institutionnel, la gouvernance et les pratiques des OÉSS au Québec, au Canada et à l’international.</p>
+                                
+                              <p>Les sous-objectifs de l’axe sont :</p>
+                              <ul>
+                                <li>Analyser les processus et enjeux d’institutionnalisation de l’ÉSS au Québec et ailleurs. </li>
+                                <li>Cartographier et étudier les relations entre les composantes qui constituent les systèmes d’émergence et de déploiement des OÉSS. </li>                      
+                              </ul>
+                              <p>Exemples de projets :</p>
+                              <ul>
+                                <li>Analyser et proposer un cadre statistique qui témoigne de la spécificité et du potentiel des organisations de l’ÉSS.</li>
+                                <li>Comprendre les limitations législatives et réglementaires à la reconnaissance des organisations de l’ÉSS dans un secteur d’activité.</li>
+                                <li>Étudier les relations entre les organisations de l’ÉSS et les organisations publiques (municipalités, MRC, etc.) dans une région donnée.</li>
+                                <li>Identifier les processus de participation des organisations de l’ÉSS aux marchés publics.</li>
+                              </ul>  
+                              <p><span>Coordonnés : <br>Courriel : </span> <span><a href="#" class="fw-600 text-black">Claude-Andre.Guillotte@USherbrooke.ca</a></span></p>
+                              <a href="#" class="rounded-5 social-network"><i class="fab fa-linkedin-in"></i></a>                 
+                          </div>
+                          <a href="#" class="btn btn-primary arrow-btn text-uppercase fw-500">
+                            Voir les membres de l’axe 1
+                            <span class="arrow-icon">
+                              <i class="fa-solid fa-right-long"></i>
+                            </span>
+                          </a>     
+                        </div>
+                        <div class="col-12 col-lg-3">
+                          <div class="researcher">
+                            <img src="img/teams/CA_Guillotte_NB.png" srcset="img/CA_Guillotte_NB@2x.png 2x, img/CA_Guillotte_NB.png 1x" class="img-fluid" alt="">
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- research-block ends -->
+                <div class="research-block">
+                  <div class="row">
+                    <div class="col-12 col-lg-12">
+                      <div class="row">
+                        <div class="col-12 col-lg-9">
+                          <div class="d-flex flex-column flex-md-row justify-content-start align-items-start mb-3">
+                            <div class="d-block">
+                              <div class="research-img">
+                                <img class="img-fluid" src="./img/icon-ii.svg" alt="">
+                              </div>
+                            </div>
+                            <div class="d-block">
+                              <h3 class="fw-700 text-red">Axe 2 : Engagement, <br>
+                                travail et </h3>  
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-lg-9">
+                          <div class="mb-3">
+                              <h5>Cotitulaire responsable de l’axe: <br>
+                                Valérie Michaud, Université du Québec à Montréal</h5>
+                              <p>L’axe 2 cherche à comprendre comment attirer, mais aussi reconnaître, retenir et valoriser les humains qui évoluent en ÉSS et leurs collectifs, ainsi qu’en prendre soin. Cette démarche repose sur la documentation des pratiques allant dans ce sens, en captant la diversité des expériences d’engagement, de travail et l’importance des métiers et de l’éthique du care en ÉSS.</p>
+                                
+                              <p>Les sous-objectifs de l’axe sont :</p>
+                              <ul>
+                                <li>Identifier et développer les pratiques facilitant l’inclusion et l’engagement via et dans l’ÉSS;</li>
+                                <li>Approfondir notre compréhension de l’expérience et des conditions de travail en ÉSS; </li>
+                                <li>Documenter les outils et pratiques qui permettent l’épanouissement et l’émancipation en ÉSS.</li>                      
+                              </ul>
+                              <p>Exemples de projets :</p>
+                              <ul>
+                                <li>Analyser diverses pratiques de GRH (dotation, rémunération, développement de compétences, etc.) et leurs particularités en contexte d’ÉSS.</li>
+                                <li>Approfondir notre compréhension des facteurs permettant d’améliorer les conditions de travail et la santé psychologique des travailleur·euse·s en ÉSS.</li>
+                                <li>Documenter et évaluer des initiatives permettant de faciliter l’inclusion, mais aussi l’attraction et la rétention des personnes salariées ou bénévoles dans les organisations de l’ÉSS.</li>
+                                <li>Explorer des modes d’organisation et de gestion alternatifs (horizontalité, codirection, etc.) 
+                                  et leurs implications.</li>
+                              </ul>  
+                              <p><span>Coordonnés : <br>Courriel : </span> <span><a href="#" class="fw-600 text-black">michaud.valerie@uqam.ca</a></span></p>
+                              <a href="#" class="rounded-5 social-network"><i class="fab fa-linkedin-in"></i></a>                 
+                          </div>
+                          <a href="#" class="btn btn-primary arrow-btn text-uppercase fw-500">
+                            Voir les membres de l’axe 2
+                            <span class="arrow-icon">
+                              <i class="fa-solid fa-right-long"></i>
+                            </span>
+                          </a>     
+                        </div>
+                        <div class="col-12 col-lg-3">
+                          <div class="researcher">
+                            <img src="img/teams/Michaud_Valerie_2024_NB.png" srcset="img/Michaud_Valerie_2024_NB@2x.png 2x, img/Michaud_Valerie_2024_NB.png 1x" class="img-fluid" alt="">
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- research-block ends -->
+                <div class="research-block">
+                  <div class="row">
+                    <div class="col-12 col-lg-12">
+                      <div class="row">
+                        <div class="col-12 col-lg-9">
+                          <div class="d-flex flex-column flex-md-row justify-content-start align-items-start mb-3">
+                            <div class="d-block">
+                              <div class="research-img">
+                                <img class="img-fluid" src="./img/icon-iii.svg" alt="">
+                              </div>
+                            </div>
+                            <div class="d-block">
+                              <h3 class="fw-700 text-yellow">Axe 3 : Modèle d’organisation <br>
+                                et d’action soutenables</h3>  
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-lg-9">
+                          <div class="mb-3">
+                              <h5>Cotitulaire responsable de l’axe:
+                                Luc K. Audebrand, Université Laval</h5>
+                              <p>L’axe 3 souhaite explorer différentes initiatives déployées au sein de l’écosystème de l’ÉSS 
+                                en se focalisant sur trois volets : (1) l’émergence des OÉSS porteuses de MOAS, (2) leurs stratégies de consolidation, de pérennisation et de changement d’échelle, et (3) les dynamiques d’intercoopération qui favorisent les retombées positives.
+                              </p>                                
+                              <p>Les sous-objectifs de l’axe sont :</p>
+                              <ul>
+                                <li>Explorer les stratégies d’émergence des OÉES porteuses de MOAS.</li>
+                                <li>Explorer le financement, la consolidation et le changement d’échelle des OÉSS porteuses 
+                                  de MOAS.  </li>
+                                <li>Explorer les stratégies et dynamiques d’intercoopération en ÉSS.</li>                      
+                              </ul>
+                              <p>Exemples de projets :</p>
+                              <ul>
+                                <li>Étudier l’impact des pratiques d’accompagnement et des mécanismes de financement. </li>
+                                <li>Évaluer l’efficacité des moyens et outils actuels utilisés pour soutenir la création et le développement des organisations de l’ÉSS. </li>
+                                <li>Examiner les bénéfices et les défis de la mutualisation entre entreprises de l’économie 
+                                  sociale et solidaire.</li>
+                                <li>Développer de nouveaux outils d’accompagnement et de financement adaptés aux 
+                                  besoins émergents.</li>
+                              </ul>  
+                              <p><span>Coordonnés : <br>Courriel : </span> <span><a href="#" class="fw-600 text-black">luc.audebrand@fsa.ulaval.ca</a></span></p>
+                              <a href="#" class="rounded-5 social-network"><i class="fab fa-linkedin-in"></i></a>                 
+                          </div>
+                          <a href="#" class="btn btn-primary arrow-btn text-uppercase fw-500">
+                            Voir les membres de l’axe 3
+                            <span class="arrow-icon">
+                              <i class="fa-solid fa-right-long"></i>
+                            </span>
+                          </a>     
+                        </div>
+                        <div class="col-12 col-lg-3">
+                          <div class="researcher">
+                            <img src="img/Luc_Audebrand.png" srcset="img/Luc_Audebrand@2x.png 2x, img/Luc_Audebrand.png 1x" class="img-fluid" alt="">
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- research-block ends -->
+                <div class="research-block">
+                  <div class="row">
+                    <div class="col-12 col-lg-12">
+                      <div class="row">
+                        <div class="col-12 col-lg-9">
+                          <div class="d-flex flex-column flex-md-row justify-content-start align-items-start mb-3">
+                            <div class="d-block">
+                              <div class="research-img">
+                                <img class="img-fluid" src="./img/icon-iv.svg" alt="">
+                              </div>
+                            </div>
+                            <div class="d-block">
+                              <h3 class="fw-700 text-brand">Axe 4 : Ancrages, développement <br>
+                                et retombées de l’ÉSS dans 
+                                les territoires</h3>  
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-lg-9">
+                          <div class="mb-3">
+                              <h5>Cotitulaire responsable de l’axe:<br>
+                                Marie-Laure Dioh, Université du Québec en Outaouais</h5>
+                              <p>L’axe 4 s’applique à documenter les trajectoires et retombées des pratiques 
+                                innovantes d’ÉSS, dans une perspective de transfert, de changement d’échelle 
+                                et de transformation sociale.</p>                                
+                              <p>Les sous-objectifs de l’axe sont :</p>
+                              <ul>
+                                <li>Étudier les ancrages et le développement de l’ÉSS dans une diversité de territoires. </li>
+                                <li>Explorer et soutenir les retombées durables de l’ÉSS dans les territoires en créant 
+                                  des écosystèmes. </li>
+                              </ul>
+                              <p>Exemples de projets :</p>
+                              <ul>
+                                <li>Étudier les forces et capacités d’action des acteurs de l’ÉSS dans les territoires.</li>
+                                <li>Étudier les stratégies de développement et de changement d’échelle des OÉSS dans 
+                                  les territoires.</li>
+                                <li>Évaluer et valoriser les retombées des OÉSS dans les territoires.</li>
+                                <li>Favoriser le transfert d’initiatives en ÉSS à d’autres milieux et territoires.</li>
+                              </ul>  
+                              <p><span>Coordonnés : <br>Courriel : </span> <span><a href="#" class="fw-600 text-black">marie-laure.dioh@uqo.ca</a></span></p>
+                              <a href="#" class="rounded-5 social-network"><i class="fab fa-linkedin-in"></i></a>                 
+                          </div>
+                          <a href="#" class="btn btn-primary arrow-btn text-uppercase fw-500">
+                            Voir les membres de l’axe 4
+                            <span class="arrow-icon">
+                              <i class="fa-solid fa-right-long"></i>
+                            </span>
+                          </a>     
+                        </div>
+                        <div class="col-12 col-lg-3">
+                          <div class="researcher">
+                            <img src="img/ML_dioh_NB.png" srcset="img/ML_dioh_NB@2x.png 2x, img/ML_dioh_NB.png 1x" class="img-fluid" alt="">
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- research-block ends -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>  
+    <!-- footer starts -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Navigation</h4>
+            <ul>
+              <li>
+                <a href="">L’ÉCONOMIE SOCIALE ET SOLIDAIRE</a>
+              </li>
+              <li><a href="">LE RÉSEAU</a></li>
+              <li><a href="">LES ÉVÉNEMENTS</a></li>
+              <li><a href="">LA RECHERCHE</a></li>
+              <li><a href="">LES MEMBRES</a></li>
+              <li><a href="">CONTACTEZ-NOUS !</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Qui sommes-nous</h4>
+            <p>
+              Le Réseau de recherche en économie sociale et solidaire (RRESS)
+              étudie les enjeux associés à la reconnaissance, au développement
+              et à l’essor de l’économie sociale et solidaire.
+            </p>
+
+            <div class="social-links">
+              <h4>Nous joindre</h4>
+              <div class="d-flex align-items-center">
+                <a href="">info@RRESS.ca</a>
+                <a href="" class="links">
+                  <i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h4>Infolettre</h4>
+            <p>Pour recevoir notre infolettre, inscrivez-vous!</p>
+            <a href="#" class="btn btn-primary arrow-btn text-uppercase fw-500">
+                      Je m’abonne
+                      <span class="arrow-icon">
+                        <i class="fa-solid fa-right-long"></i>
+                      </span>
+                    </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="lower-footer">
+      <div class="container">
+        <p>
+          © Réseau de recherche en économie sociale et solidaire – Tous droits
+          réservés – 2024
+        </p>
+      </div>
+    </div>
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"
+      integrity="sha512-/bOVV1DV1AQXcypckRwsR9ThoCj7FqTV2/0Bm79bL3YSyLkVideFLE3MIZkq1u5t28ke1c0n31WYCOrO01dsUg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -126,6 +126,7 @@ h4 {
 
 header {
   padding: 20px 0 0 0;
+  overflow-x: auto;
 }
 
 header ul.navbar-nav {
@@ -593,7 +594,7 @@ footer .rees-btn .btn-primary .arrow-first {
   color: var(--Offblack);
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-500);
-  padding: 10px 0 10px 20px;
+  padding: 2px 0 2px 20px;
   text-transform: none;
   transition: var(--transition500);
 }
@@ -1134,4 +1135,49 @@ footer .rees-btn .btn-primary .arrow-first {
 .project-section .cta-red-box .arrow-btn:hover .arrow-icon {
   background: var(--primaryColor);
   color: var(--Offblack);
+}
+.research-axes-wrap .research-block{
+  border-bottom: solid 2px var(--blue);
+  padding-top:clamp(20px, 3.2px + 4vw, 35px);
+  padding-bottom:clamp(20px, 3.2px + 4vw, 35px);
+  font-weight: var(--font-weight-400);
+}
+.research-img{
+  border-radius: 50%;
+  width: clamp(80px, 3.2px + 4vw, 145px);
+  height: clamp(80px, 3.2px + 4vw, 145px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-right: 10px;
+  background-color: var(--white);
+}
+.research-img svg{
+  width: 100%;
+  max-width: 98px;
+  object-fit: contain;
+}
+.research-block ul,
+.research-block li{
+  color: var(--blue);
+  font-weight: var(--font-weight-400);
+}
+.research-block h5{
+  font-weight: var(--font-weight-700);
+  color: var(--blue);
+}
+.researcher{
+  border-radius: 27px 27px 0 27px;
+  overflow: hidden;
+}
+.researcher img{
+  object-fit:cover;
+  width: 258px;
+}
+.text-red{
+  color: var(--Orange);
+}
+.text-yellow{
+  color: var(--primaryColor);
 }
