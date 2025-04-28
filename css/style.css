@@ -126,7 +126,7 @@ h4 {
 
 header {
   padding: 20px 0 0 0;
-  overflow-x: auto;
+  /* overflow-x: auto; */
 }
 
 header ul.navbar-nav {
